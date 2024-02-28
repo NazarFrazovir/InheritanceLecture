@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Array.h"
 
                                        // Наслідування (Inheritance)
 
@@ -41,61 +42,65 @@ class Імʼя_Дочірнього_Класу : Модифікатор_Насл
 - Похідини класами(у тому числі і через їхні обʼєкти)
 */
 
+/* 5. Наслідування і конструктори
 
 
 
-struct Point{
+*/
 
-};
 
-class Person{};
 
-class Vehicle{
-    protected:
-Point position;
-double height;
-double lenght;
-double width;
-double weight;
-    public:
-void Move(Point direction);
-void Rotate(Point direction);
-void Scale(float factor);
-};
+// struct Point{
 
-class Car:public Vehicle
-{
-    private:
-int doors;
-int tankCapacity;
-char model[30];
-char mark[30];
-bool isStarted;
+// };
 
-    public:
-void FillUp(int points);
-void Start();
-};
+// class Person{};
 
-class Plane:public Vehicle
-{
-    private:
-int seets;
-Point route[2];
+// class Vehicle{
+//     protected:
+// Point position;
+// double height;
+// double lenght;
+// double width;
+// double weight;
+//     public:
+// void Move(Point direction);
+// void Rotate(Point direction);
+// void Scale(float factor);
+// };
 
-    public:
-void AutorizePeople(const Person* peoplelist);
-void Fly();
-void CallDispatcher(Person dispatcher);
-};
+// class Car:public Vehicle
+// {
+//     private:
+// int doors;
+// int tankCapacity;
+// char model[30];
+// char mark[30];
+// bool isStarted;
+
+//     public:
+// void FillUp(int points);
+// void Start();
+// };
+
+// class Plane:public Vehicle
+// {
+//     private:
+// int seets;
+// Point route[2];
+
+//     public:
+// void AutorizePeople(const Person* peoplelist);
+// void Fly();
+// void CallDispatcher(Person dispatcher);
+// };
 
 int main(){
 
-Car car1;
-car1.FillUp(10);
+// Car car1;
+// car1.FillUp(10);
 
-car1.Scale(10); // Тепер ми наслідуємо метод Scale із класса Vehicle
-
-
+// car1.Scale(10); // Тепер ми наслідуємо метод Scale із класса Vehicle
+Array arr1(25);
     return 0;
 }
