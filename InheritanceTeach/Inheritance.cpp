@@ -112,6 +112,27 @@ class Derived:protected Base{}
 (3): Структури в С++ можуть мати методи та поля, але вони не підтримують спадковість(інкапсуляцію,поліморфізм). 
 */
 
+/* 11. Множинне наслідування
+
+- Множинне наслідування відбувається, коли клас успадковує функціональність більше ніж від одного батьківського класу.
+Це означає що дочірній клас має доступ до членів всіх батьківських класів.
+
+Приклад:
+
+class A{
+    public:
+void printA(){std::cout<<"Print A"<<std::endl;}
+};
+class B {
+    public:
+void printB(){std::cout<<"Print B"<<std::endl;}
+};
+class Derived:public A, public B{
+    public:
+void printDerived(){std::cout<<"Print derived"<<std::endl;}
+};
+
+*/
 
 // struct Point{
 
